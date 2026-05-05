@@ -16,7 +16,7 @@ public class RedirectController {
     @Autowired
     private UrlService urlService;
 
-    @GetMapping("/{shortCode}")
+    @GetMapping("/r/{shortCode}")
     public void redirect(@PathVariable String shortCode, HttpServletResponse response) throws IOException {
         String originalUrl = urlService.resolveUrl(shortCode);
         if (originalUrl != null) {

@@ -24,8 +24,8 @@ function App() {
       if (!response.ok) throw new Error('Failed to shorten URL')
 
       const data = await response.json()
-      // Generate the full short URL
-      const fullShortUrl = `${window.location.origin}/${data.shortCode}`
+      // Generate the full short URL with the new /r/ prefix
+      const fullShortUrl = `${window.location.origin}/r/${data.shortCode}`
       setShortened(fullShortUrl)
     } catch (err) {
       setError(err.message)
