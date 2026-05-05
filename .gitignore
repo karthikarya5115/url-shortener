@@ -1,0 +1,18 @@
+# Java
+backend/target/
+*.class
+
+# Node / React
+frontend/node_modules/
+frontend/dist/
+.eslintcache
+
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.DS_Store
+
+# Secrets
+.env
+application.properties.local
